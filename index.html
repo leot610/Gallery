@@ -21,11 +21,34 @@
             <script src="js/respond.min.js"></script>
         <![endif]-->
         <script type="text/javascript" src="js/libs/modernizr.min.js"></script>
+        <style type="text/css">
+         #container { display:block; }
+         @media only screen and (orientation:portrait){
+            #container {  
+                  -webkit-transform: rotate(90deg);
+                  -moz-transform: rotate(90deg);
+                  -o-transform: rotate(90deg);
+                  -ms-transform: rotate(90deg);
+                  transform: rotate(90deg);
+                 }
+
+         }
+         @media only screen and (orientation:landscape){
+            #container {  
+                  -webkit-transform: rotate(0deg);
+                  -moz-transform: rotate(0deg);
+                  -o-transform: rotate(0deg);
+                  -ms-transform: rotate(0deg);
+                  transform: rotate(0deg);
+                 }
+         }
+    </style>
     </head>
+    
     <body data-spy="scroll" data-target="#main-nav" data-offset="400">
         
 	<header id="home" class="jumbotron">	
-            <div class="container">		
+            <div class="container" id="container">		
                 <div class="row">		
                     			
                     <div class="col-sm-6">
